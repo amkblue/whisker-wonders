@@ -219,31 +219,29 @@ a:hover {
 /*pet header & products container*/
 .grid-container {
   	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-template-columns: 1fr 1fr 1fr;
 }
 /*pet headers*/
 .pet-food-header,
 .pet-toys-header,
-.pet-supplies-header,
-.pet-beds-homes-header {
-  	grid-column: span 4;
+.pet-supplies-header {
+  	grid-column: span 3;
   	margin-top: 50px;
   	margin-bottom: 20px;
   	text-align: center;
 }
 /*pet products*/
 .pet-food-products,
-.pet-toys-products,
-.pet-supplies-products {
-  	grid-column: span 4;
+.pet-toys-products {
+  	grid-column: span 3;
   	display: flex;
   	justify-content: space-evenly;
 }
-.pet-beds-homes-products {
-  	grid-column: span 4;
+.pet-supplies-products {
+  	grid-column: span 3;
   	display: flex;
   	justify-content: space-evenly;
-  	margin-bottom: 250px; /* for proper footer placement */
+  	margin-bottom: 220px; /* for proper footer placement */
 }
 
 /* footer at bottom */
