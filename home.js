@@ -1,11 +1,9 @@
-
 /* expanding cards project from udemy */
 const panels = document.querySelectorAll('.panel');
 const pets = document.getElementById('pets');
 const essentials = document.getElementById('essentials');
 const merch = document.getElementById('merch');
 const donations = document.getElementById('donations');
-
 
 panels.forEach((panel) => {
     panel.addEventListener('click', () => {
@@ -44,9 +42,6 @@ donations.addEventListener('dblclick', () => {
         window.location.href = "donation/donation.html";
     }
 })
-
-
-
 
 /* pink hearts effect on header 
    double click heart from udemy course */
