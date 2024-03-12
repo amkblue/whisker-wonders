@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device=width, intial-scale=1.0">
+  <title>Pet Merch</title>
+  <link href="merchstyle.css" rel="stylesheet"/>
+  <!--Importing Montserrat font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- TO ADD star rating signs and shopping cart -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <nav class="nav-bar">
+    <ul class="nav-flexbox">
+        <li><a href="../index.html"><img src="https://cdn.discordapp.com/attachments/1208964871106990080/1212517825852350505/file-w15yf7VhQHfR7KFYjv7O3A4v.png?ex=65fb5ab9&is=65e8e5b9&hm=69bd853786512bafad5e34d2a32e57a47c451b17f466c4f7db19ac069310b470&" alt="pet store logo" class="logo"/></a></li>
+        <li><a class="nav-links" href="/pet/pet.html">Pets</a></li>
+        <li><a class="nav-links" href="essentials.html">Essentials</a></li>
+        <li><a class="nav-links" href="/merch/merch.html">Merch</a></li>
+        <li><a class="nav-links" href="/donation/donation.html">Donations</a></li>
+        <li>
+            <a class="cart" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <p id="count" class="count">0</p>
+            </a>
+        </li>
+    </ul>
+    <hr />
+</nav>
+
+  <section class="product-page">
+    <div class="product-detail">
+
+        <div class="product-img">
+           <!-- Swiper -->
+          <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- image 1 -->
+            <div class="swiper-slide">
+              <img src="https://i.etsystatic.com/18393666/r/il/971b2b/4146716775/il_1588xN.4146716775_mgvz.jpg" alt="light cat crochet">
+            </div>
+            <!-- image 2 -->
+            <div class="swiper-slide">
+              <img src="https://i.etsystatic.com/18393666/r/il/c5c90b/4099060638/il_1588xN.4099060638_lqna.jpg" alt="black cat crochet">
+            </div>
+            <!-- image 3 -->
+            <div class="swiper-slide">
+              <img src="https://i.etsystatic.com/18393666/r/il/78415a/4162622193/il_1588xN.4162622193_63k6.jpg" alt="crochet">
+            </div><!-- image 4 -->
+            <div class="swiper-slide">
+              <img src="https://i.etsystatic.com/18393666/r/il/0b61ef/4151063652/il_1588xN.4151063652_e4ba.jpg" alt="all crochet">
+            </div>
+            
+          </div>
+          <!-- btns -->
+          <div class="slider-btns">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div> <!--myswipper-->
+        </div> <!--product-img-->
+
+        <div class="product-text">
+          <!--category-->
+          <span class="product-category">Cat Jacket & Sweaters</span>
+          <!-- title -->
+          <h3>Handmade Crocheted Pattern Sweater</h3>
+          <div class = "product-rating">
+            <span><i class = "fas fa-heart"></i></span>
+            <span><i class = "fas fa-heart"></i></span>
+            <span><i class = "fas fa-heart"></i></span>
+            <span><i class = "fas fa-heart"></i></span>
+            <span><i class = "fas fa-star"></i></span>
+            <span>(56 ratings)</span>
+          </div>
+          <!-- price -->
+          <h5>$64.99</h5>
+          <!-- <span class="product-price">$64.99</span> -->
+          <!-- color container -->
+          <div class="product-color-container">
+            <!-- colors -->
+            <strong>Color</strong>
+            <div class="product-color">
+                <input type="checkbox" class="c-checkbox" id="c-pink">
+                <label for="c-pink" class="c-label c-label-pink"></label>
+        
+                <input type="checkbox" class="c-checkbox" id="c-purple">
+                <label for="c-purple" class="c-label c-label-purple"></label>
+        
+                <input type="checkbox" class="c-checkbox" id="c-yellow">
+                <label for="c-yellow" class="c-label c-label-yellow"></label>
+
+                <input type="checkbox" class="c-checkbox" id="c-white">
+                <label for="c-white" class="c-label c-label-white"></label>
+        
+                <input type="checkbox" class="c-checkbox" id="c-brown">
+                <label for="c-brown" class="c-label c-label-brown"></label>
+            </div>
+        </div>
+        
+          
+          <!--size-container-->
+          <div class="product-size-container">
+            <strong>Size</strong>
+            <!-- sizes -->
+              <div class="product-size">
+                <input type="checkbox" class="s-checkbox" id="s-xs">
+                <label for="s-xs" class="s-label">XS</label>
+
+                <input type="checkbox" class="s-checkbox" id="s-s">
+                <label for="s-s" class="s-label">S</label>
+
+                <input type="checkbox" class="s-checkbox" id="s-m">
+                <label for="s-m" class="s-label">M</label>
+
+                <input type="checkbox" class="s-checkbox" id="s-l">
+                <label for="s-l" class="s-label">L</label>
+
+                <input type="checkbox" class="s-checkbox" id="s-xl">
+                <label for="s-xl" class="s-label">XL</label>
+              </div>
+          </div>   
+          
+          <!-- Quantity -->
+          <div class="product-quantity-container">
+            <strong>Quantity </strong>
+
+            <div class="quantity">
+              <a href="#" class="quantity__minus"><span>-</span></a>
+              <input name="quantity" type="text" class="quantity__input" value="1">
+              <a href="#" class="quantity__plus"><span>+</span></a>
+            </div>          
+        
+          </div>
+
+          <!-- BTNS -->
+          <div class="product-buttons">
+            <a href="#" class="add-cart-btn">Add to Cart</a>
+            <a href="#" class="pay-btn">Pay with Paypal</a>
+          </div>
+
+          <!--product details-->
+          <div class="description">
+            <p>100% hand-made crochet sweater with Houndstooth Pattern. The sweater is best to wash by hand using cold water. </p>
+            <p>The model is wearing size XL.</p>
+            <ul>
+              <li>XS: Chest:12" Back:8"</li>
+              <li>S: Chest:14" Back:8"</li>
+              <li>M: Chest:16" Back:9"</li>
+              <li>L: Chest:18" Back:11"</li>
+              <li>XL: Chest:20" Back:12"</li>
+            </ul>
+          </div>
+
+        </div>
+
+    </div>
+
+    <!-- ============================= CUSTOMER REVIEW STARTS HERE ============================== -->
+
+    <!-- testinomials  -->
+    <div class="product-customer">
+
+      <div class="product-preview">
+
+        <div class="preview-heading">
+        </div>
+        <div class="progress-bar">
+          <li><h3>5 <i class="fas fa-heart"></i></h3>
+            <span class="bar"><span class="five-star"></span></span>
+          </li>
+          <li><h3>4 <i class="fas fa-heart"></i></h3>
+            <span class="bar"><span class="four-star"></span></span>
+          </li>
+          <li><h3>3 <i class="fas fa-heart"></i></h3>
+            <span class="bar"><span class="three-star"></span></span>
+          </li>
+          <li><h3>2 <i class="fas fa-heart"></i></h3>
+            <span class="bar"><span class="two-star"></span></span>
+          </li>
+          <li><h3>1 <i class="fas fa-heart"></i></h3>
+            <span class="bar"><span class="one-star"></span></span>
+          </li>
+        </div>
+        <div class="pictures">
+          <table>
+            <tr>
+              <td><img src="https://i.pinimg.com/736x/02/a4/00/02a40002bad4307992f308f1cc9f45a7.jpg"></td>
+              <td><img src="https://i.pinimg.com/736x/7d/65/5a/7d655a2967cc62c5fd0ddb1d9caf299a.jpg"></td>
+              <td> <img src="https://i.pinimg.com/736x/a6/4e/fd/a64efd2cec505e564ed0db11582c9bfb.jpg"></td>
+            </tr>
+          </table>
+         
+        </div>
+        <div class="review-btns">
+          <div class="product-buttons">
+            <a href="#" class="ask-qs-btn">Ask a Question</a>
+            <a href="#" class="write-btn">Write a Review</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- border tabs ======== -->
+
+      <div class="tabs-container">
+        <button class="tab">Reviews (56)</button>
+        <button class="tab">Questions</button>
+        <div class="dropdown-container">
+          <label for="sort-select" class="sort-label"></label>
+          <select id="sort-select" name="sort-order">
+              <option value="most-recent">Most Recent</option>
+              <option value="oldest">Oldest</option>
+          </select>
+       </div>
+     </div>
+
+      <div class="product-review-box">
+
+          <!-- ===================== BOX 1 - =====================-------------------->
+          <div class="review-box">
+            <!--- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                  <!-- IMGG -->
+                  <div class="profile-img">
+                    <img src="https://i.pinimg.com/564x/e8/e8/44/e8e844f98103709e34548fb11d3bba81.jpg" alt="profile 1"/>
+                  </div>
+                  <!-- USERR NAMEE -->
+                  <div class="user-name">
+                    <strong>Totoro</strong>
+                    <span>@myneighbortotoro</span>
+                  </div>
+                </div>
+                
+              <!---- REVIEW -->
+              <div class="review">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="far fa-heart"></i> 
+              </div>
+            </div>
+           <!-- ============ COMENTS =============-->
+           <div class="client-coment">
+            <p>This handmade crochet sweater is fantastic! It fits my cat perfectly and keeps her warm during chilly days. Occasionally, the sweater sheds a few fibers, but overall, it's a minor issue considering how great it looks on my cat!</p>
+           </div>
+          </div>
+
+          <!-- ===================== BOX 2 - =====================-------------------->
+          <div class="review-box">
+            <!--- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                  <!-- IMGG -->
+                  <div class="profile-img">
+                    <img src="https://i.pinimg.com/736x/f6/7c/61/f67c617dfc75bcd7ecea5346ff8889be.jpg" alt="profile 1"/>
+                  </div>
+                  <!-- USERR NAMEE -->
+                  <div class="user-name">
+                    <strong>Kaonashi</strong>
+                    <span>@spiritedaway</span>
+                  </div>
+                </div>
+              <!---- REVIEW -->
+              <div class="review">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i> 
+              </div>
+            </div>
+           <!-- ============ COMENTS =============-->
+           <div class="client-coment">
+            <p>...literally blown away by the craftsmanship and attention to detail! My cat looks adorable and feels cozy in this sweater. It's a purr-fect 5-star purchase! &#10084; &#10084;</p>
+           </div>
+          </div>
+
+          <!-- ===================== BOX 3 - =====================-------------------->
+          <div class="review-box">
+            <!--- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                  <!-- IMGG -->
+                  <div class="profile-img">
+                    <img src="https://i.pinimg.com/564x/bc/bd/8c/bcbd8c3b68d48ee9774adb71e78b270d.jpg" alt="profile 1"/>
+                  </div>
+                  <!-- USERR NAMEE -->
+                  <div class="user-name">
+                    <strong>Jiji</strong>
+                    <span>@kikisdelivery</span>
+                  </div>
+                </div>
+              <!---- REVIEW -->
+              <div class="review">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i> 
+              </div>
+            </div>
+           <!-- ============ COMENTS =============-->
+           <div class="client-coment">
+            <p>This handmade crochet sweater for cats is a must-have for any fashionable feline. The craftsmanship is top-notch, and the design is both adorable and functional.</p>
+           </div>
+          </div>
+
+          <!-- ===================== BOX 4 - =====================-------------------->
+          <div class="review-box">
+            <!--- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                  <!-- IMGG -->
+                  <div class="profile-img">
+                    <img src="https://i.pinimg.com/564x/2b/a1/e2/2ba1e244631c0f5568a9479d20884792.jpg" alt="profile 1"/>
+                  </div>
+                  <!-- USERR NAMEE -->
+                  <div class="user-name">
+                    <strong>Turnip Head</strong>
+                    <span>@howlingcastle</span>
+                  </div>
+                </div>
+              <!---- REVIEW -->
+              <div class="review">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart"></i> 
+              </div>
+            </div>
+           <!-- ============ COMENTS =============-->
+           <div class="client-coment">
+            <p>I don't know why I haven't seen this sooner. I want to buy all the shades <span>&#128557;</span></p>
+           </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <!--- ============================ FEATURED PRODUCTS ==================================== -->
+
+    <div class="swiper featured-products">
+
+      <!-- <h2 class="heading">Featured Products</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://i.pinimg.com/736x/fe/80/d1/fe80d14c6f86215564f49ad657320212.jpg"></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/736x/fe/80/d1/fe80d14c6f86215564f49ad657320212.jpg"</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div> -->
+    </div>
+    
+    <div class="ALL-products">
+
+    <h2 class="heading">All Products</h2>
+<div class="grid">
+
+  <div class="all-products">
+    <img src="https://i.pinimg.com/736x/cf/cb/56/cfcb566b2b2b2bf24b6e6193139d3e35.jpg"/>
+    <h6>Simple Poka Dot Overall</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$18.99</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/736x/0e/b0/07/0eb007c54a8449fd1a5b04e855afa35e.jpg"/>
+    <h6>Cozy Black Pajama</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$23.6</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/736x/3f/61/51/3f6151883df7903f1a2b07ab2fd77ad0.jpg" />
+    <h6>Natural Pocket Jumpsuit</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$52.3</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/474x/63/f7/9d/63f79d9c6eab59e7c2be6a4e5e04e2e6.jpg" />
+    <h6>Simple Stripped Black Shirt</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$50.6</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/564x/58/33/e7/5833e79663ad928ae3dc1ed9a6b446ae.jpg" />
+    <h6>Light Brown Summer Dress</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$10.24</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/564x/b2/b1/50/b2b1507cc283eaf1d9a4c4f67f73524b.jpg" />
+    <h6>Detective Cosplay</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$65.6</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/564x/a7/d3/ee/a7d3ee8d959797b1b0b44eb1429d7259.jpg" />
+    <h6>Soft Green Hoodie for Fall</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$71.45</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/474x/49/2d/36/492d365fbb036421fae18d0e3e2be1d5.jpg" />
+    <h6>Elegant Black and White Cardigan</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$46.67</p>
+  </div>
+  <div class="all-products">
+    <img src="https://i.pinimg.com/474x/5a/11/69/5a11694b89d1d16047be944bff2b94b3.jpg" />
+    <h6>Fancy Floral Blue Dress</h6>
+    <p> <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart"></i>
+      <i class="far fa-heart"></i> </p>
+    <p>$53.41</p>
+  </div>
+</div>
+ 
+  <div class="see-more">
+  <a href="#" class="see-more-btn">See more</a>
+  </div> 
+    </div>
+
+    </div>
+  </section>
+
+  <!-- jquery ============================================ -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+      //size checkbox only one is checked 
+      $(document).ready(function() {
+        $('.s-checkbox').on('change', function() {
+        $('.s-checkbox').not(this).prop('checked', false);
+        });
+      });
+
+      //color checkbox only one is checked
+      $(document).ready(function() {
+        $('.c-checkbox').on('change', function() {
+        $('.c-checkbox').not(this).prop('checked', false);
+        });
+      });
+
+      $(document).ready(function() {
+      const minus = $('.quantity__minus');
+      const plus = $('.quantity__plus');
+    const input = $('.quantity__input');
+    minus.click(function(e) {
+      e.preventDefault();
+      var value = input.val();
+      if (value > 1) {
+        value--;
+      }
+      input.val(value);
+    });
+    
+    plus.click(function(e) {
+      e.preventDefault();
+      var value = input.val();
+      value++;
+      input.val(value);
+    })
+  });
+
+      //swiper script 
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        820: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        },
+      });
+
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+    </script>
+<!-- ============ FOOOTER ---===================== -->
+<footer>
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>We are a pet connection platform dedicated to matching pets with loving homes and providing quality pet merchandise.</p>
+      </div>
+      <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Donation</a></li>
+              <li><a href="/faq/faq.html">FAQ</a></li>
+          </ul>
+      </div>
+      <div class="footer-section contact-form">
+          <h3>Contact Us</h3>
+          <p> Alice Kim, Fatima Chaudhry, Libby Benjamin, Nashita Saba </p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Copyright &copy; 2024 by WhiskerWonderShop. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
