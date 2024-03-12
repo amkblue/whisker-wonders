@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faqstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <nav class="nav-bar">
+      <ul class="nav-flexbox">
+          <li><a href="../index.html"><img src="https://cdn.discordapp.com/attachments/1208964871106990080/1212517825852350505/file-w15yf7VhQHfR7KFYjv7O3A4v.png?ex=65fb5ab9&is=65e8e5b9&hm=69bd853786512bafad5e34d2a32e57a47c451b17f466c4f7db19ac069310b470&" alt="pet store logo" class="logo"/></a></li>
+          <li><a class="nav-links" href="/pet/pet.html">Pets</a></li>
+          <li><a class="nav-links" href="essentials.html">Essentials</a></li>
+          <li><a class="nav-links" href="/merch/merch.html">Merch</a></li>
+          <li><a class="nav-links" href="/donation/donation.html">Donations</a></li>
+          <li>
+              <a class="cart" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p id="count" class="count">0</p>
+              </a>
+          </li>
+      </ul>
+      <hr />
+  </nav>
+  
+    <div class="wrapper">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">When will the pet/merchandise be delivered?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Pet and merchandise delivery schedules are provided upon completion of purchase, with a commitment to a timely and safe arrival.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">Do you have a physical store for the merchandise?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+           No we do not have physical store for our merchandise, as our platform is dedicated to supporting small businesses by exclusively featuring their pet-related products online. 
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Do I get confirmation for my donation?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes, you will receive an email confirmation for your donation, including details for tax deduction purposes.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I get on the list to receive updates and promotions?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            You can sign up for updates and promotions by providing your email through our website's subscription form.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What is your refund policy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our refund policy allows returns within a specified period, provided the items are in their original condition.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How do I start a return or exchange?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            To initiate a return or exchange, please contact our customer service team via telephone or email to receive step-by-step assistance and a return authorization.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <!-- ============ FOOOTER ---===================== -->
+<footer>
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>We are a pet connection platform dedicated to matching pets with loving homes and providing quality pet merchandise.</p>
+      </div>
+      <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Donation</a></li>
+              <li><a href="/faq/index.html">FAQ</a></li>
+          </ul>
+      </div>
+      <div class="footer-section contact-form">
+          <h3>Contact Us</h3>
+          <p> Alice Kim, Fatima Chaudhry, Libby Benjamin, Nashita Saba </p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Copyright &copy; 2024 by WhiskerWonderShop. All rights reserved.</p>
+  </div>
+</footer>
+
+  </body>
+</html>
