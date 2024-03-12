@@ -248,11 +248,46 @@ a:hover {
   	opacity: 0.5;
 }
 
-/* footer */
-footer {
-  	position: absolute;
-  	background-color: rgb(230, 230, 240);
-  	width: 100%;
-  	bottom: 0;
-  	height: 160px;
+/* ====================================== FOOOTER STARTS HEREEEE ================================== */
+ footer {
+    background-color: #E7E3f1;
+    color: #2E2C39;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h3 {
+    color: #2E2C39;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: #2E2C39;
+    font-weight: 350;
+}
+
+
+.footer-bottom {
+    padding: 10px;
+    border-top: 1px solid #777;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #AFA3D5;
 }
