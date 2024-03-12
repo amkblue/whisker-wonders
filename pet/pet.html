@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="pet.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- background image for the front of webpage -->
+  <div class="background" id="background">
+    <img src="images/cutepets.png" alt="pets" width="1520" height="720">
+  </div>
+
+  <!-- sticky nav bar for access of all links to webpages -->
+  <div class="nav-bar" id="nav-bar">
+    <nav class="nav-bar">
+      <ul class="nav-flexbox">
+        <li><a href="../index.html"><img src="images/pet-store-logo.jpg" alt="pet store logo" class="logo" /></a></li>
+        <li><a class="nav-links" href="#">Pets</a></li>
+        <li><a class="nav-links" href="../essentials/essentials.html">Essentials</a></li>
+        <li><a class="nav-links" href="../merch/merch.html">Merch</a></li>
+        <li><a class="nav-links" href="../donation/donation.html">Donations</a></li>
+        <li>
+          <a class="cart" href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <p id="count" class="count">0</p>
+          </a>
+        </li>
+      </ul>
+      <hr />
+    </nav>
+  </div>
+  <!-- created a div to create a seperate line to seperate the <heading> from the rest of the webpage -->
+  <div class="line" id="line">
+    <hr>
+    </hr>
+  </div>
+
+  <hr>
+
+  <!-- seperate div for heading -->
+  <div class="heading" id="heading">
+    <h1>Heartwarming Adoption Story</h1>
+
+  </div>
+
+
+
+
+  <!-- div fo a slideshow to show images of dog rufus asoption story CREDITS GO TO UDEMY-->
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+
+
+      <img src="https://i.pinimg.com/564x/b8/89/51/b88951f1d6c4e1092300fe9ffbb9a093.jpg" style="width:90%">
+      <div class="text">Hi, my name is Rufus.</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <img src="https://i.pinimg.com/564x/7f/9c/5c/7f9c5c6f90f438bc279822239bf89388.jpg" style="width:90%">
+      <!--  <div class="text">I love to play with my toys.</div> -->
+    </div>
+
+
+
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+
+
+  </div>
+
+
+
+
+  </div>
+
+  <!-- story for the slides dog rufus image -->
+
+  <div id="container" id="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+
+            <img src="images/story.png" alt="story" class="card-img-top" width="1000" height="550">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- button that leads to a link where you can view adoption stories -->
+
+  <a href=" https://www.animalleague.org/category/blog/spotlight-stories/adoption-stories/" target="_blank">
+    <button class="button">Click For more Adoption Stories!</button>
+
+
+
+  </a>
+  <!-- link to instagram -->
+
+  <div class="instagram" class="instagram">
+    <a href="https://www.instagram.com/adopt_a_pet/" target="_blank">
+      <img src="https://cdn0.iconfinder.com/data/icons/popular-social-media-colored/48/JD-08-512.png" alt="instagram"
+        class="instagram" width="100" height="100">
+    </a>
+  </div>
+
+
+  <!--heading -->
+  <div class="heading" id="heading">
+    <h1>Adoption Agency</h1>
+
+  </div>
+
+  <!-- link to adoption agency -->
+
+  <div id="adoptionagency" id="adoptionagency">
+    <div class=" adoptionagency">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+
+
+          <img src="images/Paws For A Cause.jpg" alt="Paws For A Cause" class="card-img-top" float: left; width="300"
+            height="650">
+          <img src="images/adoptionagencyhelp.png" alt="adoptionagencyhelp" class="card-img-top" float: right;
+            width="1210" height="650">
+
+          <a href="https://www.aspca.org/adopt-pet"><img src="images/adoptnow.png" alt="pets" width=100%
+              height="650"></a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="pet.js"></script>
+</body>
+
+</html>
